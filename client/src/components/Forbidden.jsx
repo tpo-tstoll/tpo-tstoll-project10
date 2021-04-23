@@ -12,7 +12,7 @@ const Forbidden = () => {
         Access to this page is Forbidden
       </p>
       <NavLink to='/'>
-        <button>
+        <button className="button">
           Return home
         </button>
       </NavLink>
