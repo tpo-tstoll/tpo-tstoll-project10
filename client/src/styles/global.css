@@ -43,6 +43,7 @@ header {
 .header--logo a {
     font-size: 1.25rem;
     color: #FFFFFB;
+    text-shadow: 1px 1px 2px #23CE6B;
 }
 header li {
     font-size: .8rem;
@@ -71,10 +72,16 @@ header nav a:hover {
 .course--module {
     background: #648086;
     border-radius: .5rem;
+    box-shadow: 10px 10px 5px #54999e;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     display: block;
 }
+
+.course--module:hover {
+    box-shadow: 10px 10px 3px #23CE6B;
+}
+
 .course--label {
     color: #FFFFFB;
     font-size: .9rem;
@@ -119,7 +126,7 @@ header nav a:hover {
     line-height: 1.5;
 }
 .actions--bar {
-    background: #A39BA8;
+    background: #648086;
     padding: 1rem 0;
     margin: -2rem 0 2rem;
 }
@@ -191,8 +198,8 @@ textarea {
     margin-bottom: 0;
 }
 .button:not(.button-secondary):hover {
-    background: #424c4c;
     cursor: pointer;
+    box-shadow: 2px 2px 4px #23CE6B
 }
 .button-secondary {
     color: #272D2D;
@@ -201,8 +208,8 @@ textarea {
     transition: box-shadow 0.2s, color 0.2s;
 }
 .button-secondary:hover {
-    color: #424c4c;
-    box-shadow: 0 0 0 2px #424c4c inset;
+    color: #3b3b3b;
+    box-shadow: 0 0 0 2px #23CE6B inset;
     cursor: pointer;
 }
 input:focus, button:focus, .button:focus, textarea:focus {

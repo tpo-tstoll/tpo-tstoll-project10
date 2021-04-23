@@ -21,8 +21,10 @@ const CourseDetail = () => {
                         description: response.data.description,
                         estimatedTime: response.data.estimatedTime,
                         materialsNeeded: response.data.materialsNeeded,
-                        userId: response.data.User.id
+                        userId: response.data.User.id,
+                        author: `${response.data.User.firstName} ${response.data.User.lastName}`
                     }
+                    console.log(response)
                     value.actions.setCourseValues(course);
                  }  catch (error) {
                     // redirect to notfound if the course doesn't exist, redirect to /error if there is a server error
@@ -55,7 +57,7 @@ const CourseDetail = () => {
                         <div>
                             <h3 className="course--detail--title">Course</h3>
                             <h4 className="course--name">{value.courseValues.title}</h4>
-                            <p>By {value.user.userName}</p>
+                            <p>By {value.courseValues.author}</p>
                             <ReactMarkdown children={value.courseValues.description} />
                         </div>
                         <div>
